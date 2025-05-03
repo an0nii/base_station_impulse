@@ -40,6 +40,3 @@ class MetaGenerator:
                         'type': 'class'
                     })
         return list(meta_dict.values())
-
-    def gen_meta(self):
-        return self.parse_xml()

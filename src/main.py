@@ -23,6 +23,6 @@ if __name__ == '__main__':
     with open(os.path.join(output_dir, 'res_patched_config.json'), 'w') as res_output_file:
         json.dump(res_patched, res_output_file, indent=4)
     meta_generator = MetaGenerator(xml_data)
-    meta_output = meta_generator.gen_meta()
+    meta_output = meta_generator.parse_xml()
     with open(os.path.join(output_dir, 'meta.json'), 'w') as meta_output_file:
         json.dump(meta_output, meta_output_file, indent=4)
